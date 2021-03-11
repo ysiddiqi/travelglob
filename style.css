@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body, html {
+  height: 100%;
+}
+
+
+.topnav img{
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(117, 162, 231);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  display: block;
+}
+.topnav a.icon {
+  background: rgb(117, 162, 231);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  /* background-color: rgb(15, 64, 170); */
+  color: black;
+}
+/* home image */
+carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+/* News Ticker */
+.tcontainer {
+  width: 100%;
+  
+  overflow: hidden; /* Hide scroll bar */
+  
+}
+ 
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+  width: 100%;
+  height: 50px;
+  padding-top: 12px;
+  padding-left: 100%; /* Push contents to right side of screen */
+  background-color: #eee;
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 25s;
+}
+.ticker-move:hover{
+  animation-play-state: paused; /* Pause scroll on mouse hover */
+}
+/* ITEMS */
+.ticker-item{
+  display: inline-block; /* Lay items in a horizontal line */
+  padding: 0 2rem;
+}
+
+/* container-booking */
+.container-booking{
+  background-color: cornsilk;
+ 
+  width: 100%;
+}
+.booking-image{
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.booking-image li{
+  list-style-type: none;
+  padding: 0px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.names {
+  list-style-type: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.names li{
+  padding: 0px 70px;
+}
+.container-booking a:hover, .names li:hover{
+  border-bottom: 3px solid burlywood;
+}
+
+.all-buttons .btn {
+  border: none;
+  background-color: inherit;
+  margin:35px;
+  margin-left: 130px;
+  /* padding: 8px; */
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.all-buttons .btn:hover{
+  background-color: gray;
+}
+.trip .location {
+  /* background-color:rgb(117, 162, 231); */
+  border: 2px solid rgb(190, 182, 182);
+  border-radius: 5px;
+  width:350px;
+  height: 50px;
+  margin-left: 125px;
+  text-align: left;
+  }
+  
+  .location:hover{
+    border: 2px solid rgb(43, 43, 44);
+  }
+  .trip .going{
+    margin-left: 0px;
+    width: 350px;
+  }
+  .trip input{
+  border: 2px solid rgb(119, 119, 161);
+  border-radius: 5px;
+  height: 40px;
+  }
+  .location input{
+    /* border: 2px solid white; */
+    height: 46px;
+    margin-left: 21px;
+    border: none;
+  }
+  .going input{
+    margin-left: 21px;
+  }
+  #depart{
+    border: 2px solid rgb(190, 182, 182);
+    margin-left: 25px;
+    margin-bottom: 7px;
+  }
+  .places{
+  margin: 55px 125px;
+    
+  }
+  #myCheckbox{
+    margin-left: 25px;
+
+  }
+
+  .field-validation button{
+    margin-top: 15px;
+    margin-left: 45%;
+    padding: 10px 80px;
+    border-radius: 5px;
+  }
+  
+  
+/* bOOKING */
+.container-relax {
+  position: relative;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.container-relax img {
+  vertical-align: middle;
+}
+
+.container-relax .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Vaccation-ideas */
+
+/* The grid: Three equal columns that floats next to each other */
+
+#vacation-ideas .column {
+  float: left;
+  width: 33.33%;
+  padding: 0px 5px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+#vacation-ideas .column img{
+  width: 100%;
+  height: 450px;
+}
+
+#vacation-ideas .containerTab {
+  padding: 20px;
+  color: white;
+  top: 0;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* parallax */
+
+#travel-locally{
+  margin-top: 10px;
+  height: 100%;
+}
+
+#travel-locally .parallax {
+  /* The image used */
+  background-image: url('imgs/family-parallex.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#travel-locally span{
+  font-size: 200px;
+  margin-left: 20px;
+}
+

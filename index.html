@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelglobe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <scrip src="https://kit.fontawesome.com/94120d4b5c.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="logo"> <img src="imgs/travel-logo.png"> travelGlobe</a>
+    <div id="myLinks">
+      <a href="#Home">Home</a>
+      <a href="#package">Packages</a>
+      <a href="#flight">Flights</a>
+      <a href="#hotel">Hotels</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myNavlinks()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Home Image -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/usajpg" alt="Los Angeles" width="1500" height="600">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/neatherland.jpg" alt="Chicago" width="1500" height="600">
+        <div class="carousel-caption">
+          <h3>Neatherland</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/canada.jpg" alt="New York" width="1500" height="600">
+        <div class="carousel-caption">
+          <h3>Canada</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- News Ticker -->
+  <div class="tcontainer">
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+        <div class="ticker-item">Covid-19 and the infection of the U.S.S. Theodore Roosevelt</div>
+        <div class="ticker-item">Total cases of Covid-19 have reached 28.6 million marks in the United States, and some
+          states continue to enforce travel restrictions and quarantines.</div>
+        <div class="ticker-item">Visitors to Alaska are no longer required to have a negative result from a Covid-19
+          test to enter, though voluntary testing is still recommended. Gov. Mike Dunleavy </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Booking -->
+  <section id="booking-trip">
+    <div class="container-booking">
+      <ul class="booking-image">
+        <li><a href="#"><img src="https://s2.svgbox.net/hero-solid.svg?ic=office-building&color=000" width="32"
+              height="32"></li></a>
+        <li><a href="#"><img src="https://s2.svgbox.net/materialui.svg?ic=airplanemode_active&color=000" width="32"
+              height="32"></a>
+        <li><a href="#"><img src="https://s2.svgbox.net/materialui.svg?ic=car_repair&color=000" width="32"
+              height="32"></a>
+        <li><a href="#"><img src="https://s2.svgbox.net/files.svg?ic=go-package&color=000" width="32" height="32"></a>
+        <li><a href="#"><img src="https://s2.svgbox.net/illlustrations.svg?ic=junk-boat&color=000" width="32"
+              height="32">
+        </li></a>
+      </ul>
+      <ul class="names">
+        <li>Hotels</li>
+        <li>Flights</li>
+        <li>Cars</li>
+        <li>Packages</li>
+        <li>Cruises</li>
+        <hr>
+      </ul>
+      <hr>
+      <ul class="all-buttons">
+        <button class="btn success" style="float:left">Roundtrip</button>
+        <button class="btn success" style="float:left">One-Way</button>
+        <button class="btn success" style="float:left">Multi-city</button>
+        <div class="btn-group">
+          <button class="btn success dropdown-toggle" data-toggle="dropdown">1traveler</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <h5>Travelers</h5>
+            </a>
+            <a class="dropdown-item" href="#">
+              <h6>Adults</h6>
+            </a>
+            <a class="dropdown-item" href="#">
+              <h6>Children<br> ages 2 to 17</h6>
+            </a>
+            <a class="dropdown-item" href="#">
+              <h6>Infants<br>younger than 2</h6>
+            </a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn success dropdown-toggle" data-toggle="dropdown">Economy</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#pre">Premium Economy</a>
+            <a class="dropdown-item" href="#bus">Business class</a>
+            <a class="dropdown-item" href="#fir">First class</a>
+          </div>
+        </div>
+      </ul>
+      <div class="trip">
+        <button class="button location"><img src="https://s2.svgbox.net/materialui.svg?ic=location_on&color=000"
+            width="32" height="32">leaving from<input list="countries" name="country">
+          <datalist id="countries">
+            <option value="N.America">
+            <option value="Europe">
+            <option value="Asia">
+            <option value="Africa">
+            <option value="Australia">
+          </datalist>
+        </button>
+        <img class="arrow" src="https://s2.svgbox.net/materialui.svg?ic=compare_arrows&color=000" width="32"
+          height="32">
+        <button class="button location going"><img src="https://s2.svgbox.net/materialui.svg?ic=location_on&color=000"
+            width="32" height="32">Going to<input list="countries" name="country">
+          <datalist id="countries">
+            <option value="N.America">
+            <option value="Europe">
+            <option value="Asia">
+            <option value="Africa">
+            <option value="Australia">
+          </datalist>
+        </button>
+
+        <input type="date" id="depart" name="departdate">
+        <input type="date" id="depart" name="departdate">
+
+      </div>
+      <div class="places">
+        <input type="checkbox" id="myCheck" onclick="myCalendar()">
+        <label for="myCheck">Add a place to stay</label>
+        <input type="date" id="place" name="place">
+
+
+        <input type="checkbox" id="myCheckbox" onclick="myVehicle()">
+        <label for="myCheck"> Add a Car</label>
+        <input type="date" id="vehicle" name="vehicle">
+      </div>
+
+      <div class="field-validation">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+          <button class="btn btn-primary" input type="text" name="fname">Search</button>
+        </form>
+      </div>
+  </section>
+  <div class="container-relax">
+    <img src="imgs/booking-back.png" alt="Notebook" style="width:100%">
+    <div class="content">
+      <h1>Need Relaxation?</h1>
+      <p>Stress is the trash of modern life - we all generate it but if you don't dispose of it properly, it will pile
+        up and overtake your life.</p>
+    </div>
+  </div>
+  <section id="vacation-ideas">
+    <div class="row">
+      <div class="column" onclick="openTab('b1');"> <img src="imgs/florida.jpg">
+
+      </div>
+
+
+      <div class="column" onclick="openTab('b2');"> <img src="imgs/texas-kids.jpg">
+
+      </div>
+      <div class="column" onclick="openTab('b3');"> <img src="imgs/peru.jpeg">
+
+      </div>
+    </div>
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab" style="display:none;background:green">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2>Venue for couple Florida</h2>
+      <p>A cheerful frame of mind, reinforced by relaxation...is the medicine that puts all ghosts of fear on the run.
+      </p>
+    </div>
+
+    <div id="b2" class="containerTab" style="display:none;background:blue">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2>Kids Happines Place</h2>
+      <p>No matter how much pressure you feel at work, if you could find ways to relax for at least five minutes every
+        hour, you'd be more productive.</p>
+    </div>
+
+    <div id="b3" class="containerTab" style="display:none;background:red">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2>Texas, USA</h2>
+      <p>You need not wrestle for your good. Your good flows to you most easily when you are relaxed, open, and
+        trusting.</p>
+    </div>
+
+  </section>
+  <section id="travel-locally">
+    <div class="parallax"></div>
+    <div style="height:400px;background-color:rgb(159, 173, 149);font-size:30px">
+      If you want enjoye in these relaxation places and you're need of some deep relaxation, then why not make sure to pick of our
+      wonderful packages or some of our relaxing  trip.
+      <br><p><span>&#127940;</span><span>&#127943;</span><span>&#128131;</span><span>&#128134;</span><span>&#127938;</span></p>
+    </div>
+    <div class="parallax"></div>
+    <div style="height:400px;background-color:rgb(159, 173, 149)">
+      
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 style="font-size:40px">Fill out this form and get a surprise gift&#128540;</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Choose option</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Single package</option>
+                  <option>Couple package</option>
+                  <option>Family package</option>
+                  <option>Friends package</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Hotel & Car</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Hotel Only</option>
+                  <option>Car Only</option>
+                  <option>Hotel & Car</option>
+                  <option>Car with driver</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+
+          <div class="col-lg-4">
+
+          <div class="card">
+            <img class="card-img-top" src="imgs/disnyland.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Special Offer</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax"></div>
+  </section>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
